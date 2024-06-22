@@ -1,0 +1,289 @@
+/* Main container */
+.login-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #17505E; /* Example background color */
+  flex-direction: column;
+}
+
+.buttons-container{
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+}
+/* Left half (SVG) */
+.left-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Right half (form) */
+.right-half {
+  background-color: #eee;
+  margin: 20px;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  flex: 0.6;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Heading */
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #17505E;
+}
+
+/* Next button */
+.next {
+  background-color: #17505E;
+  color: #eee;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Auth icon images */
+.auth img {
+  width: 25px;
+  margin: 0 auto;
+}
+
+/* Auth options container */
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Auth button styles */
+.auth {
+  background-color: #D5EAEF;
+  border-radius: 20px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Guest option text */
+.guest-option span {
+  color: #1c87a2;
+  font-weight: 500;
+}
+
+.guest-option {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+/* Divider line */
+.line {
+  height: 0.05em;
+  width: 100%;
+  background: #00000023 !important;
+}
+
+/* OR text container */
+.or span {
+  background: #eee;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+}
+
+/* Legal text */
+.legal a,
+.timer {
+  color: #1c87a2;
+}
+
+.legal p {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+/* Other options container */
+.other-options {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: space-between;
+}
+
+/* Country code select styles */
+.country-code-select {
+  background: #EEE;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Input field styles */
+.input input {
+  width: 100%;
+  background: #eee;
+  padding: 0 10px;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.input select {
+  background: #eee;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.204);
+}
+
+/* Phone icon styles */
+.phone {
+  width: 20px;
+}
+
+/* OTP screen container */
+.otp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* OTP form styles */
+.otp2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40%;
+}
+
+/* Verify button styles */
+.verify-button {
+  background-color: #17505E;
+  color: #eee;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+
+/* Auth back button styles */
+.auth2 {
+  background-color: #D5EAEF;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+/* SVG2 styles */
+.svg2 {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Translator button styles */
+.translater {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.translater button {
+  background-color: #eee;
+  color: #17505E;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .login-page {
+    flex-direction: row;
+  }
+
+  .right-half {
+    padding: 30px 60px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .svg2 {
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .right-half {
+    margin: 0px;
+    padding: 20px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: unset;
+  }
+
+  .heading {
+    padding: 0 0 10px 0;
+    font-size: 1.5rem;
+  }
+
+  .next,
+  .verify-button,
+  .translater button {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .auth {
+    width: 48%;
+    margin-top: 10px;
+  }
+  .or{
+    margin-top: 10px;
+  }
+
+  .svg2 {
+    width: 100%;
+    max-width: 300px;
+  }
+  .guest-option{
+    margin-top: 15px;
+  }
+  .otp2 {
+    height: auto;
+  }
+  .verify-button{
+    margin-top: 0;
+  }
+  form p{
+    margin: 10px 0;
+  }
+  .resend{
+    margin: 15px 0;
+  }
+}
